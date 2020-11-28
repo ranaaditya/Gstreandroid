@@ -35,7 +35,7 @@ JNI_OnLoad (JavaVM * vm, void *reserved)
     return 0;
   }
   jclass klass = (*env)->FindClass (env,
-      "org/freedesktop/gstreamer/tutorials/tutorial_1/Tutorial1");
+      "com/ranaaditya/gstreandroid/");
   (*env)->RegisterNatives (env, klass, native_methods,
       G_N_ELEMENTS (native_methods));
 
